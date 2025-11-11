@@ -1,0 +1,11 @@
+# Ignorar executáveis do Windows
+*.exe
+*.obj
+
+# Ignorar executáveis do Linux/macOS
+*.o
+*out
+# (Se você não deu nome com -o, ele gera "a.out")
+
+# Ignorar a pasta de config do VSCode
+.vscode/
