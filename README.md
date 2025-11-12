@@ -17,7 +17,7 @@ Organizam os dados em uma ordem linear, definida pela ordem de inserção.
 * **Pontos Fracos:**
     * Adicionar ou remover elementos do **início** ou do **meio** da lista é *extremamente lento*, pois exige que todos os elementos seguintes sejam movidos.
 * **Quando usar:** Sempre. Se você precisa de uma lista de coisas, comece com `vector`. Mude só se tiver um bom motivo.
-* **Ver código:** [`/Estudos-STL-CPP/vector/exemplo_vector.cpp`](./Estudos-STL-CPP/vector/exemplo_vector.cpp)
+* **Ver código:** [`/vector/exemplo_vector.cpp`](./vector/exemplo_vector.cpp)
 
 #### `std::deque`
 * **O que é:** "Double-Ended Queue", ou Fila de Duas Pontas. Pense num "canudo".
@@ -29,7 +29,7 @@ Organizam os dados em uma ordem linear, definida pela ordem de inserção.
     * Cada inserção (início ou fim) é *um pouquinho* mais lenta que a `push_back` do `vector`.
     * Usa um pouco mais de memória.
 * **Quando usar:** Quando você precisa da velocidade de um `vector` (acesso por `[]`), mas também precisa (e muito) adicionar e remover do **início** da lista.
-* **Ver código:** [`/Estudos-STL-CPP/deque/exemplo_deque.cpp`](./Estudos-STL-CPP/deque/exemplo_deque.cpp)
+* **Ver código:** [`/deque/exemplo_deque.cpp`](./deque/exemplo_deque.cpp)
 
 #### `std::array`
 * **O que é:** Um caixote de tamanho fixo. Basicamente, um array normal do C (ex: `int v[10]`) com uma "capa" de C++ que o deixa mais inteligente.
@@ -40,7 +40,7 @@ Organizam os dados em uma ordem linear, definida pela ordem de inserção.
 * **Pontos Fracos:**
     * O tamanho **não pode mudar** nunca. É definido em tempo de compilação.
 * **Quando usar:** Quando você sabe *exatamente* o tamanho que precisa (ex: "um vetor de 3 dimensões", "cores RGB") e esse tamanho nunca mudará.
-* **Ver código:** [`/Estudos-STL-CPP/array/exemplo_array.cpp`](./Estudos-STL-CPP/array/exemplo_array.cpp)
+* **Ver código:** [`/array/exemplo_array.cpp`](./array/exemplo_array.cpp)
 
 #### `std::forward_list`
 * **O que é:** A "rua de mão única". É uma lista simplesmente encadeada. Cada elemento só sabe quem é o próximo.
@@ -52,5 +52,43 @@ Organizam os dados em uma ordem linear, definida pela ordem de inserção.
     * Não tem `.size()` (para saber o tamanho, teria que percorrer tudo, o que é lento).
     * Não tem `push_back()` (ele não sabe onde é o fim).
 * **Quando usar:** Em cenários muito específicos onde a memória é *extremamente* restrita e você só precisa inserir no início (`push_front`) e andar para frente.
-* **Ver código:** [`/Estudos-STL-CPP/forward_list/exemplo_forward_list.cpp`](./Estudos-STL-CPP/forward_list/exemplo_forward_list.cpp)
+* **Ver código:** [`/forward_list/exemplo_forward_list.cpp`](./forward_list/exemplo_forward_list.cpp)
 
+---
+
+## 🚀 Como Executar os Exemplos
+
+Todos os exemplos são arquivos C++ (`.cpp`) independentes. Você precisará de um compilador C++ (como o **g++**) instalado na sua máquina.
+
+### Passo a Passo (Pelo Terminal)
+
+1.  **Clone o repositório** para a sua máquina (se ainda não o fez):
+    ```bash
+    git clone [https://github.com/marcosgabrielms/Estudo-STL-CPP.git](https://github.com/marcosgabrielms/Estudo-STL-CPP.git)
+    cd Estudo-STL-CPP
+    ```
+
+2.  **Navegue até a pasta** do exemplo que você quer rodar.
+    ```bash
+    # Exemplo para o vector
+    cd vector
+    ```
+
+3.  **Compile o arquivo:**
+    Use o `g++` (ou outro compilador) para criar um arquivo executável. O comando é:
+    `g++ <arquivo.cpp> -o <nome_do_executavel>`
+
+    ```bash
+    # Exemplo para o vector
+    g++ exemplo_vector.cpp -o teste_vector
+    ```
+
+4.  **Execute o programa:**
+    * **No Linux/macOS:**
+        ```bash
+        ./teste_vector
+        ```
+    * **No Windows:**
+        ```bash
+        .\teste_vector.exe
+        ```
