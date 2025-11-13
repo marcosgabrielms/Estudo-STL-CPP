@@ -8,10 +8,10 @@ Implementações e resumos dos principais contêineres da STL. A explicação de
 
 | Categoria | Contêiner | O que é? | Ver Código/Explicação |
 | :--- | :--- | :--- | :--- |
-| **Sequência** | `std::vector` | O "pau pra toda obra". Um array que cresce automaticamente. | [`./vector/`](./vector/) |
-| **Sequência** | `std::deque` | "Fila de duas pontas". Permite inserção rápida no início e no fim. | [`./deque/`](./deque/) |
-| **Sequência** | `std::array` | Um "caixote" de tamanho fixo. Um array C com superpoderes. | [`./array/`](./array/) |
-| **Sequência** | `std::forward_list`| A "rua de mão única". Lista simplesmente encadeada (leve). | [`./forward_list/`](./forward_list/) |
+| **Sequência** | `std::vector` | O "pau pra toda obra". Um array que cresce automaticamente. | [`./conteineres_stl/vector/`](./conteineres_stl/vector/) |
+| **Sequência** | `std::deque` | "Fila de duas pontas". Permite inserção rápida no início e no fim. | [`./conteineres_stl/deque/`](./conteineres_stl/deque/) |
+| **Sequência** | `std::array` | Um "caixote" de tamanho fixo. Um array C com superpoderes. | [`./conteineres_stl/array/`](./conteineres_stl/array/) |
+| **Sequência** | `std::forward_list`| A "rua de mão única". Lista simplesmente encadeada (leve). | [`./conteineres_stl/forward_list/`](./conteineres_stl/forward_list/) |
 | | | | |
 
 ## 2. ⚡ Algoritmos (Ordenação e Busca)
@@ -20,12 +20,12 @@ Implementações de algoritmos clássicos baseados no [Capítulo 8 - Ordenação
 
 | Categoria | Algoritmo | Complexidade (Pior Caso) | Ver Código/Explicação |
 | :--- | :--- | :--- | :--- |
-| **Ordenação** | `Bubble Sort` | $O(n^2)$ | [`./ordenacao_e_busca/metodos_ordenacao/bubble_sort/`](./ordenacao_e_busca/metodos_ordenacao/bubble_sort/) |
-| **Ordenação** | `Selection Sort` | $O(n^2)$ | [`./ordenacao_e_busca/metodos_ordenacao/selection_sort/`](./ordenacao_e_busca/metodos_ordenacao/selection_sort/) |
-| **Ordenação** | `Insertion Sort` | $O(n^2)$ | [`./ordenacao_e_busca/metodos_ordenacao/insertion_sort/`](./ordenacao_e_busca/metodos_ordenacao/insertion_sort/) |
-| **Ordenação** | `Merge Sort` | $O(n~lg~n)$ | [`./ordenacao_e_busca/metodos_ordenacao/merge_sort/`](./ordenacao_e_busca/metodos_ordenacao/merge_sort/) |
-| **Busca** | `Busca Linear` | $O(n)$ | [`./ordenacao_e_busca/busca_linear/`](./ordenacao_e_busca/busca_linear/) |
-| **Busca** | `Busca Binária` | $O(lg~n)$ | [`./ordenacao_e_busca/busca_binaria/`](./ordenacao_e_busca/busca_binaria/) |
+| **Ordenação** | `Bubble Sort` | $O(n^2)$ | [`./ordenacao/bubble_sort/`](./ordenacao/bubble_sort/) |
+| **Ordenação** | `Selection Sort` | $O(n^2)$ | [`./ordenacao/selection_sort/`](./ordenacao/selection_sort/) |
+| **Ordenação** | `Insertion Sort` | $O(n^2)$ | [`./ordenacao/insertion_sort/`](./ordenacao/insertion_sort/) |
+| **Ordenação** | `Merge Sort` | $O(n~lg~n)$ | [`./ordenacao/merge_sort/`](./ordenacao/merge_sort/) |
+| **Busca** | `Busca Linear` | $O(n)$ | [`./busca/busca_linear/`](./busca/busca_linear/) |
+| **Busca** | `Busca Binária` | $O(lg~n)$ | [`./busca/busca_binaria/`](./busca/busca_binaria/) |
 
 ## 3. 🚀 Como Executar os Exemplos
 
@@ -42,10 +42,10 @@ Todos os exemplos são arquivos C++ (`.cpp`) independentes. Você precisará de 
 2.  **Navegue até a pasta** do exemplo que você quer rodar.
     ```bash
     # Exemplo para o vector
-    cd vector
+    cd conteineres_stl/vector
     
     # Exemplo para o Bubble Sort
-    # cd ordenacao_e_busca/metodos_ordenacao/bubble_sort
+    # cd ordenacao/bubble_sort
     ```
 
 3.  **Compile o arquivo:**
