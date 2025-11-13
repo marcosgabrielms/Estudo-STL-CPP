@@ -1,4 +1,4 @@
-:books: docs: adiciona documentação sobre Bubble Sort# 🚶 Busca Linear (Linear Search)
+# 🚶 Busca Linear (Linear Search)
 
 Esta pasta contém a implementação em C++ do algoritmo **Busca Linear**, o método de busca mais direto que existe.
 
